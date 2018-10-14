@@ -6,7 +6,7 @@ The Tufts Bobsledding Society has a rich history of competing for the university
 #### Set Up the Dev Environment
 1. Clone Repo
     ```
-    git clone 
+    git clone https://github.com/JumboCode/django-tutorial.git
     ```
 2. Create an isolated virtual environment for you app and its dependencies.
     ```
