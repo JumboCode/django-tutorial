@@ -1,4 +1,6 @@
 ### Premise 
+
+The Tufts Bobsledding Society has a rich history of competing for the university at the highest level. To help them in their task of going to the olypmics, they've begun to develop an api to help manage their sleds and their team members. However, the bobsled team is understandably not tech savy and need your help to understand the current state of their api and extend it to their needs.
 ### Understand and Explore 
 
 #### Set Up the Dev Environment
@@ -79,7 +81,7 @@ critical issue with how things stand! The bobsled society doesn't want everyone 
 
 Lock down the api so that only accounts with valid authentication tokens can access them! 
 
-Specifically:
+Specifically at the very least:
 
 * Use a token based authentication backend to protect the /donations and /donors routes from people not affliated with the society. A token authentication backend simply means a username and password pair are submited to and verified by, your application. If the credentials are valid, the client gets return a unique, secret string that can be used to identify themself in subsequent requests. With django, safetly generating and storing these paswords and tokens is largely done for you. So there's much authentication that you need to write yourself.  
 * Use djangorestframework permission classes to restrict the routes based on the authorization token in a request's header.
