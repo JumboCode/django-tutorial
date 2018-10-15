@@ -42,6 +42,7 @@ The Tufts Bobsledding Society has a rich history of competing for the university
     ```
     python manage.py loaddata data.json
     ```
+5. Start the server with `python manage.py runserver`
 6. Navigate to [http:localhost:8000/api/sleds/](http:localhost:8000/api/sleds/) and see what response you get from the api for that route. Map the logic of handling the request by looking at urls.py for the route definition then views.py to see where the request gets passed to then serializers.py to see how django decides what data to present in the response returned. 
 
 7. Create an admin account for the admin interface with `python manage.py createsuperuser`
