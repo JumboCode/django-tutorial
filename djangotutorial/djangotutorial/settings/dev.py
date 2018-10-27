@@ -19,4 +19,9 @@ SECRET_KEY = 'czph4#9hjg2izx6tvr*5*xibj68w-s9hsc4f3fj(ah%t$4^2z!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+DEFAULT_RENDERER_CLASSES = DEFAULT_RENDERER_CLASSES + (
+    'rest_framework.renderers.BrowsableAPIRenderer',
+)
+
 ALLOWED_HOSTS = ["localhost"]
